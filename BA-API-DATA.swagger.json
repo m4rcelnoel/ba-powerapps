@@ -1,0 +1,284 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "ba.0bdd.de",
+    "description": "ba.0bdd.de"
+  },
+  "host": "ba.0bdd.de",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/v1/ba/hotchocolate": {
+      "get": {
+        "summary": "hotchocolate",
+        "description": "hotchocolate",
+        "operationId": "hotchocolate",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "200",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "description"
+                  },
+                  "measure": {
+                    "type": "string",
+                    "description": "measure"
+                  },
+                  "price": {
+                    "type": "string",
+                    "description": "price"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ba/hotdrinks": {
+      "get": {
+        "summary": "hotdrinks",
+        "description": "hotdrinks",
+        "operationId": "hotdrinks",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "200",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "description"
+                  },
+                  "measure": {
+                    "type": "string",
+                    "description": "measure"
+                  },
+                  "price": {
+                    "type": "string",
+                    "description": "price"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ba/icecold": {
+      "get": {
+        "summary": "icecold",
+        "description": "icecold",
+        "operationId": "icecold",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "200",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "description"
+                  },
+                  "measure": {
+                    "type": "string",
+                    "description": "measure"
+                  },
+                  "price": {
+                    "type": "string",
+                    "description": "price"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ba/juice": {
+      "get": {
+        "summary": "juice",
+        "description": "juice",
+        "operationId": "juice",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "200",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "description"
+                  },
+                  "measure": {
+                    "type": "string",
+                    "description": "measure"
+                  },
+                  "price": {
+                    "type": "string",
+                    "description": "price"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ba/softdrinks": {
+      "get": {
+        "summary": "softdrinks",
+        "description": "softdrinks",
+        "operationId": "softdrinks",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "200",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "description"
+                  },
+                  "measure": {
+                    "type": "string",
+                    "description": "measure"
+                  },
+                  "price": {
+                    "type": "string",
+                    "description": "price"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ba/{Drinks}": {
+      "get": {
+        "summary": "data",
+        "description": "data",
+        "operationId": "data",
+        "parameters": [
+          {
+            "name": "Drinks",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "id"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "description"
+                  },
+                  "measure": {
+                    "type": "string",
+                    "description": "measure"
+                  },
+                  "price": {
+                    "type": "string",
+                    "description": "price"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
